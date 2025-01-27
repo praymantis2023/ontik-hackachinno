@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"> </script>
+</head>
+
+<body>
+  <a-scene>
+    
+    <a-assets>
+      <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png">
+    </a-assets>
+    
+    <a-cylinder color="#c7a37f" position="0 1 -2" radius="0.3"> </a-cylinder>
+    <a-sphere position="0 1.5 -2" radius="0.3" color="#f4ede5"> </a-sphere>
+    <a-cylinder position="0 1.45 -2" radius="0.03" color="#006241" geometry.openEnded="true"> </a-cylinder>
+    <a-curvedimage animation="property: rotation; from: 0 000 0; to: 0 360 0; loop: true; dur: 1000" src="#logo" position="0 1.2 -2" height="0.3" radius="0.3" theta-length="90" rotation="0 315 0""></a-curvedimage>
+  
+  </a-scene>
+  <script src="script.js"></script>
+</body>
+
+</html>
